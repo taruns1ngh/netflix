@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #000;
+}
+.container .head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    margin-top: 10px;
+    z-index: 10;
+}
+.container img{
+    width: 14%;
+}
+.container a{
+    padding: 7px 17px;
+    background: red;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.container .head .option{
+    margin-left: 49rem;
+    padding: 8px 12px;
+    background: transparent;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px solid #fff;
+}
+
+.banner::before{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #000, transparent);
+}
+.banner::after{
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top, #000, transparent);
+} 
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #8c8c8c;
+}
+.banner .fit{
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-fit:cover;
+    width: 100%;
+    height: 100vh;
+}
+.banner .box .heading{
+    position: absolute;
+    align-items: center;
+    text-align: center;  
+    color: white;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.banner .box .heading h1{
+    font-size: 3.2rem;
+    margin-top: 60px;
+    letter-spacing: .1rem;
+}
+.banner .box .heading h3{
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-top: 8px;
+
+}
+.banner .box .heading p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 25px;
+}
+.box .heading .search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .heading .search input{
+    width: 25rem;
+    height: 3.5rem;
+    outline: none;
+    margin-top: 20px;
+    border: 1px solid #8c8c8c;
+    padding: 8px;
+    align-items: center;
+    border-radius: 1px;
+    font-size: medium;
+    z-index: 100;
+}
+.box .heading .search a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 14px 32px;
+    background: red;
+    margin-top: 20px;
+} 
+.mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #000;
+    color: white;
+    align-items: center;
+    border-top: 8px solid rgb(34,34,34);
+    border-bottom:8px solid rgb(34,34,34);
+}
+
+.img1{
+    position: relative;
+    overflow: hidden;
+}
+.img1 img{
+    width: 33rem;
+    position: absolute;
+    margin-top: -5rem;
+}
+.img1 video{
+   width: 30rem;
+
+}
+
+.mid .content{
+    margin: 9rem 3rem;
+    margin-bottom: 10rem;
+    align-items: center;
+}
+.mid .content h1{
+    font-size: 3rem;
+}
+
+.mid .content p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    max-width: 30rem ;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.mid1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background: #000;
+    color: white;
+    align-items: center;
+    padding-right: 2rem;
+    
+       
+}
+ .mid1 .content1{
+    text-align: left;
+    padding-top: 70px;
+    margin:  1px 1.5rem 0 0;
+    padding-bottom: 4rem;
+    
+}
+.mid1 .content1 h1{
+    font-size: 3rem;
+    width: 35rem;
+    
+
+}
+.img2 img{
+    width: 31rem;
+    margin:  2rem 9rem 0  0 ;
+    padding-bottom: 3rem;
+
+}
+.mid1 .content1 p{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    max-width: 40rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.mid2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #000;
+    color: white;
+    align-items: center;
+    border-top: 8px solid rgb(34,34,34);
+    border-bottom:8px solid rgb(34,34,34);
+}
+
+.img3 img{
+    width: 33rem;
+    margin-top: 3rem;
+    padding-bottom: 20px;
+}
+
+.mid2 .content2{
+    margin: 9rem 3rem;
+    margin-bottom: 10rem;
+    align-items: center;
+}
+.mid2 .content2 h1{
+    font-size: 3.2rem;
+}
+
+.mid2 .content2 p{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    max-width: 35rem ;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.mid3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background: #000;
+    color: white;
+    align-items: center;
+    padding-left: 4rem;
+    border-bottom: 8px solid rgba(34, 34, 34);
+
+}
+.img4 img{
+    width: 33rem;
+}
+.mid3 .content3{
+    margin: 9rem 3rem;
+    margin-bottom: 10rem;
+    align-items: center;
+}
+.mid3 .content3 h1{
+    font-size: 3rem;
+}
+
+.mid3 .content3 p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    max-width: 35rem ;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.mid4{
+    background: #000;
+    color: white;
+    text-align: start;
+    
+}
+.mid4 .text{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 3rem;
+
+}
+.para{
+    max-width: 50rem;
+    text-align: start;
+    align-items: flex-start;
+    margin: auto;   
+    margin-bottom: 0.1rem; 
+    
+}
+.para .question{
+    cursor: pointer;
+    margin-top:0.5rem;
+}
+.para .question .icon i{
+    display: flex;
+    position: relative;
+    width: 5rem;
+    color: white;
+}
+.para .question h1{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    max-width: 60rem;
+    height:4.5rem;
+    background-color: rgb(48,48,48);
+    padding: 1.3rem 2rem;
+    color: white;    
+}
+.para .answer p{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    margin-top:0.1rem;
+    background-color: rgb(48,48,48);
+    padding: 1.3rem 2rem;
+    color: white;
+    display: none;
+}
